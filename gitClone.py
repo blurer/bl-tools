@@ -37,7 +37,9 @@ cloneList = {
 for x in cloneList:
     try:
         git.Git("/$HOME/dev/").clone(x)
+        print('Cloned ',x)
     except:
         pass
+        print('Ignored ',x)
         
         
